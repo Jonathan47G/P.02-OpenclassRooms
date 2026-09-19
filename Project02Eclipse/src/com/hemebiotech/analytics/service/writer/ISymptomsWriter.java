@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * Defines a contract for writing symptom analysis results.
  */
-public interface IWriterSymptoms {
+public interface ISymptomsWriter {
 
     /**
      * Writes symptom counts to an output destination.

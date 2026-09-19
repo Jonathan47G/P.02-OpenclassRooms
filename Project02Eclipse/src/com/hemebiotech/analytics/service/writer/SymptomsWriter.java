@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * Writes symptom analysis results to a text file.
  */
-public class WriteSymptoms implements IWriterSymptoms {
+public class SymptomsWriter implements ISymptomsWriter {
 
     private final String filePath;
 
@@ -17,7 +17,7 @@ public class WriteSymptoms implements IWriterSymptoms {
      *
      * @param filePath the path to the output file
      */
-    public WriteSymptoms(String filePath) {
+    public SymptomsWriter(String filePath) {
         this.filePath = filePath;
     }
 

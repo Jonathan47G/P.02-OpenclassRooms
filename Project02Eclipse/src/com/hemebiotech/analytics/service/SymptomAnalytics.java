@@ -3,8 +3,8 @@ package com.hemebiotech.analytics.service;
 
 import com.hemebiotech.analytics.service.reader.ReadSymptomDataFromFile;
 import com.hemebiotech.analytics.service.counter.SymptomCounter;
-import com.hemebiotech.analytics.service.writer.IWriterSymptoms;
-import com.hemebiotech.analytics.service.writer.WriteSymptoms;
+import com.hemebiotech.analytics.service.writer.ISymptomsWriter;
+import com.hemebiotech.analytics.service.writer.SymptomsWriter;
 
 import java.io.IOException;
 import java.util.List;
@@ -23,8 +23,8 @@ public class SymptomAnalytics {
 
             SymptomCounter counter = new SymptomCounter();
 
-            IWriterSymptoms writer =
-                    new WriteSymptoms("result.out");
+            ISymptomsWriter writer =
+                    new SymptomsWriter("result.out");
 
             List<String> symptoms = reader.getSymptoms();
 
