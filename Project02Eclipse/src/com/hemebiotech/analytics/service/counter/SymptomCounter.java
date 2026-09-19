@@ -7,6 +7,9 @@ import java.util.TreeMap;
 
 public class SymptomCounter implements ISymptomCount {
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public Map<String, Integer> countSymptoms(List<String> symptoms) {
 
